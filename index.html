@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>Cordova.js: Module all the things!</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+                
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+        <link rel="stylesheet" href="css/zenburn.css">
+	</head>
+
+    <body>
+    	<div id="reveal">
+    		<div class="state-background"></div>
+            <div class="slides">
+                <section data-state="blackout">
+                    <h1>Cordova.js</h1>
+                    <h3>Javascript is Magic</h3>
+                    <h5>Gord Tanner, Code Poet(RIM)</h5>
+                    <h5>@gordtanner</h5>
+                </section>
+
+                <section>
+                    <img src="img/pony.png" style="width: 100%;" />
+                </section>
+
+                <section>
+                    A little backstory ...
+                    <img src="img/map.jpeg" style="width: 70%;" />
+                </section>
+
+                <section data-state="whiteout">
+                    <img src="img/tinyhippos.png" style="height: 100%;" />
+                </section>
+
+                <section>
+                    <img src="img/ripplelogo_large.png" style="height: 100%;" />
+                </section>
+
+                <section>
+                    <img src="img/jil.png" style="height: 100%;" />
+                </section>
+
+                <section>
+                    <img src="img/ripplelogo_large.png" style="height: 60%;" />
+                    <img src="img/heart.png" style="height: 50%;" />
+                    <img src="img/pg.png" style="height: 50%;" />
+                </section>
+
+                <section>
+                    <img src="img/before.png" style="height: 100%;" />
+                </section>
+
+                <section>
+                    <img src="img/after.png" style="height: 100%;" />
+                </section>
+
+                <section>
+                    <img src="img/20-cooler.jpg" style="width: 100%;" />
+                </section>
+
+                <section>
+                Emulate all the things!
+<pre>
+window.navigator = require('ripple/phonegap/navigator');
+navigator.geolocation = require('ripple/phonegap/geo');
+</pre>
+                <br/>
+                But ...
+                <br/>
+                <br/>
+                All Calls use a bridge to native.
+<pre>
+phonegap.exec(success, fail, "Contacts", "create", args);
+phonegap.exec(null, null, "App", "exit", args);
+</pre>
+                </section>
+
+                <section>
+                    <img src="img/honey.png" style="width: 20%;" />
+<pre> 
+var honeypot = require('ripple/honeypot');
+
+honeypot.monitor(window, "lantern").andReturn("mine!");
+
+lantern = 12;
+
+expect(lantern).toBe("mine!");
+</pre>
+
+                    allowing..
+
+<pre> 
+var bridge = require('ripple/phonegap/bridge');
+honeypot.monitor(PhoneGap, "exec").andReturn(bridge);
+</pre>
+                </section>
+
+                <section>
+                    <img src="img/aww-yeah.jpg" style="width: 100%;" />
+                </section>
+
+                <section>
+                    Where does that bring us now?
+                    <img src="img/wagon.png" style="width: 100%;" />
+                </section>
+
+                <section>
+                    There was a problem in cordova.js
+                    <img src="img/clone.jpeg" style="width: 100%;" />
+                </section>
+
+                <section>
+                    Combine Ripple and Cordova.js into something better
+                    <img src="img/hippo.png" style="width: 100%;" />
+                </section>
+                
+                <section>
+                    <img src="img/welcome.jpg" style="width: 100%;" />
+                </section>
+
+                <section data-state="whiteout">
+                    <img src="img/node.png" style="height: 90%;" />
+                </section>
+
+                <section data-state="blackout">
+                    <h2>AMD Modules?</h2>
+                    <img src="img/no.jpg" style="height: 90%;" />
+                </section>
+
+                <section>
+                    <img src="img/love.png" style="width: 100%;" />
+                </section>
+
+                <section data-state="blackout">
+                    <h2>AMD Modules?</h2>
+                    <img src="img/loving.jpg" style="height: 90%;" />
+                </section>
+
+                <section data-state="blackout">
+                    <img src="img/brohoof.png" style="height: 90%;" />
+                </section>
+
+
+                <section data-state="blackout">
+                    <img src="img/javascript.jpg" style="height: 90%;" />
+                </section>
+
+                <section data-state="blackout">
+                    <img src="img/first.png" style="height: 90%;" />
+                </section>
+
+                <section>
+                    <img src="img/science.jpeg" style="width: 100%;" />
+                </section>
+
+                <section>
+                    <img src="img/group.png" style="width: 100%;" />
+                    <ul>
+                    	<li>
+                    		<a href="http://github.com/apache/incubator-cordova-js">github.com/apache/incubator-cordova-js</a>
+                    	</li>
+                    	<li>
+                    		<a href="http://github.com/blackberry/Ripple-UI">github.com/blackberry/Ripple-UI</a>
+                    	</li>
+                        <li>
+                            <a href="http://twitter.com/#gordtanner">@gordtanner</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <aside class="controls">
+                <a class="left" href="#">&#x25C4;</a>
+                <a class="right" href="#">&#x25BA;</a>
+                <a class="up" href="#">&#x25B2;</a>
+                <a class="down" href="#">&#x25BC;</a>
+            </aside>
+
+            <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+            <div class="progress"><span></span></div>
+    	</div>
+
+        <script src="js/reveal.js"></script>
+        <script src="js/head.min.js"></script>
+        
+        <script>
+            // Parse the query string into a key/value object
+            var query = {};
+            location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+                query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+            } );
+
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: true,
+
+                // Display a presentation progress bar
+                progress: true,
+
+                // If true; each slide will be pushed to the browser history
+                history: true,
+
+                // Loops the presentation, defaults to false
+                loop: false,
+
+                // Flags if mouse wheel navigation should be enabled
+                mouseWheel: false,
+
+                // Apply a 3D roll to links on hover
+                rollingLinks: false,
+
+                // UI style
+                theme: query.theme || 'default', // default/neon
+
+                // Transition style
+                transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+            });
+
+            // If we're running the notes server we need to include some additional JS
+            // TODO Is there a better way to determine if we're running the notes server?
+            if( window.location.host === 'localhost:1947' ) {
+                head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
+            }
+
+        </script>
+
+    </body>
+</html>

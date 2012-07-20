@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/gtanner/local/bin/npm', 'install' ]
+2 info using npm@1.1.37
+3 info using node@v0.6.20
+4 verbose config file /Users/gtanner/.npmrc
+5 verbose config file /Users/gtanner/local/etc/npmrc
+6 verbose config file /Users/gtanner/local/lib/node_modules/npm/npmrc
+7 verbose read json /Users/gtanner/Projects/package.json
+8 error install Couldn't read dependencies
+9 error Error: ENOENT, open '/Users/gtanner/Projects/package.json'
+9 error  { [Error: ENOENT, open '/Users/gtanner/Projects/package.json']
+9 error   errno: 34,
+9 error   code: 'ENOENT',
+9 error   path: '/Users/gtanner/Projects/package.json' }
+10 error You may report this log at:
+10 error     <http://github.com/isaacs/npm/issues>
+10 error or email it to:
+10 error     <npm-@googlegroups.com>
+11 error System Darwin 10.7.0
+12 error command "node" "/Users/gtanner/local/bin/npm" "install"
+13 error cwd /Users/gtanner/Projects/cordova.js.slides/plugin/speakernotes
+14 error node -v v0.6.20
+15 error npm -v 1.1.37
+16 error path /Users/gtanner/Projects/package.json
+17 error code ENOENT
+18 error message ENOENT, open '/Users/gtanner/Projects/package.json'
+19 error errno 34
+20 error 34 errno
+21 verbose exit [ 34, true ]
